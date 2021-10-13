@@ -1,0 +1,16 @@
+a.out
+csrXcsc
+csb2014
+*.o
+callgrind*
+Matlab/codegen
+Matlab/matrices
+Matlab/SpGEMM_mex.mexa64
+BSpGEMM
+SpGEMM_omp
+mpitest
+extra
+gust.jl
+times
+.vscode
+final/.vscode
