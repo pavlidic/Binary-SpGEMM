@@ -11,7 +11,7 @@ For performance testing the algorithm:
 
 `mpirun/srun -n number_of_tasks SpGEMM_mpi_omp path_to_matrix block_size number_of_threads times_to_run`
 
-`number_of_tasks*path_to_matrix*block_size` needs to equal the input's size `n`.
+`number_of_tasks*path_to_matrix*block_size` **needs** to equal the input's size `n`.
 
 It prints in order:
 
