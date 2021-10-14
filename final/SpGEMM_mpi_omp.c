@@ -354,7 +354,7 @@ int main(int argc, char const *argv[])
 	MPI_Comm_size(MPI_COMM_WORLD, &numtasks);
 	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 
-    if(argc<4){
+    if(argc!=5){
         printf("usage: mpirun  -n  numtasks  SpGEMM_mpi_omp  path-to-matrix  threadslice_size  number_of_threads  times_to_run\n");
         exit(1);
     }
