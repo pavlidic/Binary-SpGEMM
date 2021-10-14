@@ -17,7 +17,11 @@ It prints in order:
 
 `tasks, threads, total_cpus/threads, blocksize, matrix path, input size n, input nnz, output nnz, mean time, median time, fastest time`
 
-For testing the correctness of the algorithm, use `Matlab/test_SpGEMM(n,d)` where `n` is the size of the `n*n` random input sparse matrix and `d` is aproximately
+### Validity ###
+For testing the validity of the algorithm, use `Matlab/test_SpGEMM(n,d)` where `n` is the size of the `n*n` random input sparse matrix and `d` is aproximately
 the non zero elements per row that the matrix will have.
+
+For testing the validity of the Hybrid MPI+OpenMP implementation, do `make test` in `final/`. It will run both the Hybrid and serial code on a test matrix
+in `Matlab/` and print either a confirm message if it they produce the same matrix or an error message otherwise.
 
 `old/` has the code of the serial implementation + previous implementations that used blocking but were much slower.
