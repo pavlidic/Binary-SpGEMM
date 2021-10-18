@@ -13,6 +13,9 @@ For performance testing the algorithm:
 
 `number_of_tasks*path_to_matrix*block_size` **needs** to equal the input's size `n`.
 
+It can easily be extended to support matrices of any size by adding one row of the remaining workload to each thread but
+that was out of the scope of this assignment.
+
 It prints in order:
 
 `tasks, threads, total_cpus/threads, blocksize, matrix path, input size n, input nnz, output nnz, mean time, median time, fastest time`
